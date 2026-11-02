@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #f6f4ee;
+  --color-ink: #14201b;
+  --color-muted: #55615b;
+  --color-line: #d9d6cb;
+  --color-signal: #b7f34d;
+  --color-signal-strong: #3f7a12;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
